@@ -1,0 +1,21 @@
+language: cpp
+compiler: gcc
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+    - os: linux
+      dist: xenial
+      sudo: required
+    - os: linux
+      dist: jessie
+      sudo: required
+    - os: linux
+      dist: sid
+      sudo: required
+    - os: osx
+sudo: required
+
+script:
+- echo "Hello World!"
